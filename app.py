@@ -135,7 +135,7 @@ def main():
         st.pyplot(fig)
 
         st.subheader("Таблица")
-        rows, cols = 25, 5
+        rows, cols = 25, 3
         columns = []
         for i in range(cols):
             columns.append(pd.DataFrame(worded[i:rows*cols:cols], columns=[f"Частота", f"Слово"]))
